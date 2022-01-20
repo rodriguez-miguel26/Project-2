@@ -1,0 +1,259 @@
+/* Global Layout Set-up*/
+
+
+/*===============================================
+    BASE ELEMENT STYLES
+================================================*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Nanum Gothic' , sans-serif;
+}
+
+
+
+
+/*================================================
+    NAVIGATION
+==================================================*/
+.nav-links {
+    list-style: none;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+li {
+    margin: 3px 10px;
+    padding: 5px 10px; 
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+
+/*==============================================
+    BASE LAYOUT
+==================================================*/
+.main-header .nav-links {
+    display: flex;
+    flex-direction: column;
+}
+
+body{
+    display: block;
+    background-color: rgb(156, 156, 156);
+    line-height: 1.5;
+    max-width: 1024px;
+}
+
+h1 {
+   display: flex;
+   justify-content: center; 
+}
+
+p {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    font-size: 15px;
+    margin: 5px 0px 30px 0px;
+
+}
+
+h3 {
+    display: block;
+    background-color: whitesmoke;
+    text-align: center;
+    padding: 30px;
+}
+
+.wrapper {
+    background-color: whitesmoke;
+}
+
+
+h2 {
+    display: block;
+    text-align: center;
+    margin: 30px 0px 5px 0px;
+    font-size: 1.2rem;
+
+
+}
+
+
+.wrapper {
+    max-width: 1100px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.por {
+    margin: 10px;
+    min-height: 250px;
+    text-align: center;
+    padding-top: 5px;
+
+}
+
+
+
+/*================================================
+MEDIA QUERIES
+================================================*/
+@media screen and (min-width: 768px) {
+   .main-header .nav-links {
+       display: flex;
+       flex-direction: row;
+       justify-content: center;
+   }
+
+    li {
+        background-color: transparent;
+        padding: 5px 0px 20px;
+    }
+
+    .profile {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .intro {
+        width: 400px;
+        text-align: left;
+        margin-left: 30px;   
+    }
+
+    div .pro-image {
+        margin-right: 30px;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+    .por {
+        flex-basis: calc(50% - 20px);
+      } 
+}
+
+ @media screen and (min-width: 1024px) {
+    .por {
+        flex-basis: calc(33.333% - 20px);
+        }
+
+    #Home {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        margin: 0px 30px;
+    }
+
+
+ }
+
+
+
+
+/*=======================================================
+IMAGE
+=================================================*/
+.pro-image {
+    display: block;
+    width: 200px;
+    margin: 15px auto;
+    
+
+}
+
+.img-market, .img-search, .img-travel, .img-map,.img-photo, .img-cal {
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*====================================================
+FOOTER
+====================================================*/
+.student-name {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.info {
+    display: block;
+    text-align: center;
+    margin: 10px 0px 5px ;
+    font-size: 15px;
+   
+}
+
+.comms {
+    display: block;
+    text-align: center;
+    margin: 40px 0px 5px 0px;
+    font-size: 1rem;
+
+}
+
+.email-cell {
+    display: block;
+    text-align: center;
+    line-height: 2;
+}
+
+footer {
+    margin-bottom: 40px;
+
+}
+
+.student-name {
+    margin: 40px 0px 0px 0px;
+}
+
+.top {
+    list-style: none;
+    text-decoration: none;
+    background-color: transparent;
+    
+
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+
+    .top {
+        display: none;
+    }
+    
+    .footer-nav-links {
+        list-style: none;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    
+    .footer-nav-links {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer-nav-links {
+        display: none;
+
+    }
+
+}
