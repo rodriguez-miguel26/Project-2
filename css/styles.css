@@ -61,6 +61,14 @@ h1{
 
 }
 
+.pro-image {
+    display: block;
+    width: 250px;
+    margin: 25px 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 body{
     display: block;
     background-color: rgb(156, 156, 156);
@@ -91,7 +99,7 @@ h2 {
 
 
 .wrapper {
-    max-width: 1100px;
+   
     padding: 10px;
     margin: 0 auto;
 }
@@ -144,6 +152,10 @@ MEDIA QUERIES
         margin: 0px 20px; 
     }
    
+    .pro-image {
+        margin-right: 20px;
+    }
+    
 
     .wrapper {
         display: flex;
@@ -153,6 +165,18 @@ MEDIA QUERIES
     .por {
         flex-basis: calc(50% - 20px);
       } 
+
+      .img-market, .img-search, .img-travel, .img-map,.img-photo, .img-cal {
+        width: 300px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    
+
+
+
 }
 
  @media screen and (min-width: 1024px) {
@@ -169,22 +193,19 @@ MEDIA QUERIES
     }
 
 
- }
 
+
+ }
 
 
 
 /*=======================================================
 IMAGE
 =================================================*/
-div .pro-image {
-    display: block;
-    margin: 25px auto;
-    width: 50%;
-}
 
 .img-market, .img-search, .img-travel, .img-map,.img-photo, .img-cal {
-    width: 300px;
+    width: 100%;
+    max-width: 320px;
     display: block;
     margin-left: auto;
     margin-right: auto;
