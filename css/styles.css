@@ -47,6 +47,7 @@ a {
     flex-direction: column;
 }
 
+
 h1{
     display: block;
     text-align: center;
@@ -130,32 +131,31 @@ MEDIA QUERIES
 
     h1 {
         text-align: center;
-        
+        margin-left: 15px;
    }
 
     li {
         justify-content: center;
         background-color: transparent;
+        padding-right: 0;
+        margin-right: 0;
     }
 
     .profile {
         display: flex;
         flex-direction: row-reverse;
-        justify-content: space-between;
-        align-items: center;
-
+        align-items: initial;
     }
 
     .intro {
         width: 400px;
-        text-align: left;
-        margin: 0px 20px; 
+        text-align: left; 
+        margin-left: 15px;
     }
    
     .pro-image {
-        margin-right: 20px;
+        margin-right: 15px;
     }
-    
 
     .wrapper {
         display: flex;
@@ -166,16 +166,32 @@ MEDIA QUERIES
         flex-basis: calc(50% - 20px);
       } 
 
-      .img-market, .img-search, .img-travel, .img-map,.img-photo, .img-cal {
-        width: 300px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+    .top {
+        display: none;
+    }
+    footer .student-name {
+        display: flex;
+        justify-content: space-between;
     }
 
+    .footer-nav-links {
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        margin-right: 15px;
+    }
+ 
+    .footer-nav-links {
+        list-style: none;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
     
+    h5 {
+        display: flex;
+        margin-left: 15px;
 
-
+    }
 
 }
 
@@ -192,11 +208,40 @@ MEDIA QUERIES
         
     }
 
+    .intro {
+        width: 400px;
+        text-align: left; 
+        margin-left: 0;
+    }
+   
+    h1 {
+        text-align: center;
+        margin-left: 0;
+   }
 
+    .pro-image {
+        width: 300px;
+        margin-right: 0;
+    }
 
+    h5 {
+        margin-left: 0;
+    }
+
+    .footer-nav-links {
+        margin-right: 0;
+    }
+    
 
  }
 
+
+ @media screen and (max-width: 768px) {
+    .footer-nav-links {
+        display: none;   
+    }
+
+}
 
 
 /*=======================================================
@@ -205,7 +250,7 @@ IMAGE
 
 .img-market, .img-search, .img-travel, .img-map,.img-photo, .img-cal {
     width: 100%;
-    max-width: 320px;
+    max-width: 500px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -226,8 +271,10 @@ FOOTER
 .info {
     display: block;
     text-align: center;
-    margin: 10px 0px 5px ;
+    margin: 20px auto;
     font-size: 15px;
+    width: 350px;
+    align-items: center;
    
 }
 
@@ -243,6 +290,7 @@ FOOTER
     display: block;
     text-align: center;
     line-height: 2;
+    margin-bottom: 50px;
 }
 
 footer {
@@ -259,35 +307,5 @@ footer {
     text-decoration: none;
     background-color: transparent;
     
-
-}
-
-
-
-
-@media screen and (min-width: 768px) {
-
-    .top {
-        display: none;
-    }
-    
-    .footer-nav-links {
-        list-style: none;
-        text-decoration: none;
-        text-transform: uppercase;
-    }
-    
-    .footer-nav-links {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .footer-nav-links {
-        display: none;
-
-    }
 
 }
